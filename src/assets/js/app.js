@@ -169,14 +169,14 @@ $(document).ready(function() {
     var currentScrollTop = $(this).scrollTop();
     if (currentScrollTop > lastScrollTop) {
       $('header .sub-header').slideUp();
-      $('header h1').animate({
-        'font-size': '2.5rem',
-      });
+      // $('header h1').animate({
+      //   'font-size': '2.5rem',
+      // });
     } else {
       $('header .sub-header').slideDown();
-      $('header h1').animate({
-        'font-size': '4rem',
-      });
+      // $('header h1').animate({
+      //   'font-size': '4rem',
+      // });
     }
     lastScrollTop = currentScrollTop;
 

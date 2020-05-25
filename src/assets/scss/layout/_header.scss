@@ -32,7 +32,9 @@ header {
       text-shadow: 0 2px 2px #000, 0 -2px 2px #000, 2px 0 2px #000, -2px 0 2px #000;
       color: $primary-color;
     }
-
+    h2 {
+      color: $primary-color-contrast;
+    }
     transition: all 1s ease-out;
   }
   .brand {
