@@ -1,47 +1,43 @@
-<header class="grid-container full">
-  <div class="grid-x grid-padding-x align-middle sub-header">
-    <div class="cell large-8 medium-6 small-4">
-      <button class="show-for-small-only" type="button" data-toggle="quickInfo"><i class="fas fa-bars fa-2x"></i></button>
-      <button type="button" class="button secondary clear hide-for-small-only btn" data-toggle="explore">Quick Info</button>
-      <button type="button" class="button secondary clear hide-for-small-only btn" id="multi_menu_toggler">Explore</button>
-    </div>
-    <div class="cell large-4 medium-6 small-8">
-      <div class="grid-x">
-        <div class="cell auto">
-          <ul class="menu align-middle">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
-        <div class="cell shrink align-self-middle">
-          <div class="flex-container align-middle">
-            <i class="fas fa-search" data-open="searchModal"></i>
-          </div>
-        </div>
+<header class="header">
+
+  <div class="grid-container full">
+
+    <div class="grid-x align-middle sub-header">
+      <div class="cell large-8 medium-6 small-2">
+        {{> button_group}}
+        <button class="show-for-small-only" type="button" data-toggle="quickInfo"><i class="fas fa-bars fa-2x"></i></button>
+      </div>
+      <div class="cell auto">
+        {{> social}}
+      </div>
+      <div class="cell shrink">
+        {{> search_button}}
       </div>
     </div>
-  </div>
-  <div class="grid-x align-middle main-header">
-    <div class="cell shrink brand">
-      <a href="home.html">
-        <div class="flex-container">
+
+    <div class="grid-x align-middle main-header">
+      <div class="cell shrink">
+        {{> brand}}
+      </div>
+      <div class="cell auto text-center">
+        <h1>IIT Bombay</h1>
+      </div>
+      <div class="cell shrink hide-for-small-only">
+        <a href="index.html" class="flex-container align-middle">
           <div class="brand__logo">
             <img src="{{root}}assets/img/logo5.png" alt="">
           </div>
-          <h2 class="brand__name align-self-middle">Indian Institute of Technolgy Bomaby</h2>
-        </div>
-      </a>
-    </div>
-    <div class="cell auto">
-      <h1 class="text-center">IIT Bombay</h1>
-    </div>
-    <div class="cell shrink hide-for-small-only">
-      <div class="logo">
-        <img src="{{root}}assets/img/logo5.png" alt="">
+        </a>
       </div>
     </div>
+
   </div>
+
 </header>
+
 {{!-- {{> search}} --}}
+<!--
+  * This div is added to provide the margin bottom to the header
+  * Since the header is on another plane the margin can't be applied correctly
+-->
+<div class="header_support"></div>

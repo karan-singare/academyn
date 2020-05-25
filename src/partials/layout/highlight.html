@@ -1,19 +1,14 @@
-<!-- Highlight -->
-<div class="grid-container fluid">
-  <div class="grid-x grid-padding-y highlight">
-    <div class="cell">
-      {{> breadcrumbs}}
-    </div>
-    <div class="cell">
-      <div class="callout alert" data-closable="">
-        <h5>Alert!</h5>
-        <p>
-          Because of the COVID19 epidemic, institute will be closed till further notifications.
-        </p>
-        <button class="close-button" aria-label="Dismiss alert" type="button" data-close="">
-          <span aria-hidden="true">×</span>
-        </button>
+<section class="highlight">
+
+  <div class="grid-container fluid">
+    <div class="grid-x grid-margin-y">
+      <div class="cell">
+        {{> breadcrumbs}}
+      </div>
+      <div class="cell">
+        {{> alert}}
       </div>
     </div>
   </div>
-</div>
+
+</section>

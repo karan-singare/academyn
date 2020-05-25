@@ -2,73 +2,51 @@ header {
   background-color: $secondary-color;
   color: $white-light;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10;
-  button, input {
-    margin: 0!important;
-  }
-  ul {
-    margin-bottom: 0;
-  }
-  input[type="search"] {
-    height: 2rem;
-    border: none;
-    background-color: $white-dark;
+  margin-bottom: 8rem;
 
-    &:focus {
-      outline: none;
-      background-color: $white-normal;
-      border: none;
+  .sub-header {
+    .button-group {
+      margin-bottom: 0;
     }
+    .search-button  {
+      margin-right: 1rem;
+    }
+    margin-left: 1rem;
   }
   .main-header {
     background-color: $primary-color;
     padding: .5rem;
-
-    h1 {
-      color: $white-light;
-      font-size: 4rem;
-      font-weight: 700;
-      text-shadow: 0 2px 2px #000, 0 -2px 2px #000, 2px 0 2px #000, -2px 0 2px #000;
-      color: $primary-color;
-    }
     h2 {
       color: $primary-color-contrast;
     }
-    transition: all 1s ease-out;
-  }
-  .brand {
-    &__logo {
-      width: 5rem;
-      height: 5rem;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &__name {
-      width: 10rem;
-      margin-left: .5rem;
-      font-size: 1.1rem;
-      color: $primary-color;
-      cursor: pointer;
-
-    }
-  }
-  a, svg {
-    transition: $transition-default;
-    color: $white-light;
-    &:hover {
-      color: $secondary-color-contrast;
-    }
   }
 }
-.reveal-overlay {
-  background-color: rgba($black, $opacity-default);
-}
-#searchModal {
-  padding: 2.5rem 5rem;
-  input {
-    margin: 0;
+.brand {
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
+  &__name {
+    width: 10rem;
+    margin-left: .5rem;
+    font-size: 1.1rem;
+    color: $primary-color;
+  }
+}
+a, svg {
+  transition: $transition-default;
+  color: $white-light;
+  &:hover {
+    color: $secondary-color-contrast;
+  }
+}
+.header_support {
+  margin-bottom: 10rem;
 }

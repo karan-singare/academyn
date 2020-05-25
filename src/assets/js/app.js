@@ -201,16 +201,16 @@ function isOnScreen(elem) {
 
 }
 
-$(document).ready(function() {
-  $('footer .overlay-3').addClass('animate__animated');
-  $(window).on('scroll', function(event) {
-    if (isOnScreen('footer')) {
-      $('footer .overlay-3').addClass('animate__slideOutDown');
-    } else {
-      $('footer .overlay-3').removeClass('animate__slideOutDown').addClass('animate__slideInUp');
-    }
-  });
-});
+// $(document).ready(function() {
+//   $('footer .overlay-3').addClass('animate__animated');
+//   $(window).on('scroll', function(event) {
+//     if (isOnScreen('footer')) {
+//       $('footer .overlay-3').addClass('animate__slideOutDown');
+//     } else {
+//       $('footer .overlay-3').removeClass('animate__slideOutDown').addClass('animate__slideInUp');
+//     }
+//   });
+// });
 
 /**
  * Animation for the websites

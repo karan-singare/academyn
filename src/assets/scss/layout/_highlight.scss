@@ -1,0 +1,15 @@
+.highlight {
+
+  margin: 1rem 0;
+  .callout {
+    .close-button {
+      color: $black;
+      z-index: 5;
+      transition: $transition-default;
+      &:hover {
+        color: $secondary-color-contrast;
+      }
+    }
+  }
+
+}

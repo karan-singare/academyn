@@ -1,21 +1,21 @@
-<div class="grid-container full">
-  <footer class="grid-x grid-padding-y">
+<footer class="footer">
+
+  <div class="grid-x">
+
     <div class="overlay-1"></div>
     <div class="overlay-2"></div>
     <div class="overlay-3"></div>
+
     <div class="cell footer__navigation">
       <div class="grid-x align-center">
-        <div class="cell medium-4 small-8">
-          {{> footer_card}}
-        </div>
-        <div class="cell medium-4 small-8">
-          {{> footer_card}}
-        </div>
-        <div class="cell medium-4 small-8">
-          {{> footer_card}}
-        </div>
+        {{#repeat 3}}
+          <div class="cell medium-4 small-8">
+            {{> footer_card}}
+          </div>
+        {{/repeat}}
       </div>
     </div>
+
     <div class="cell footer__copyright">
       <div class="grid-x grid-padding-x grid-padding-y align-center">
         <div class="cell shrink">
@@ -31,5 +31,7 @@
         </div>
       </div>
     </div>
-  </footer>
-</div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,40 @@
+<section class="main">
+
+  <div class="grid-container fluid">
+
+    <div class="grid-x grid-margin-x">
+
+      <aside class="sidebar_left cell large-3">
+        {{!--
+
+        --}}
+        {{#repeat 3}}
+          {{> news_card}}
+        {{/repeat}}
+      </aside>
+
+      <main class="main_content cell auto">
+        {{!--
+
+        --}}
+        {{#repeat 2}}
+          {{> about}}
+        {{/repeat}}
+      </main>
+
+
+      <aside class="sidebar_right cell large-3">
+        {{!--
+
+        --}}
+        {{#repeat 2}}
+          {{> trending_card}}
+        {{/repeat}}
+      </aside>
+
+    </div>
+
+  </div>
+
+
+</section>
