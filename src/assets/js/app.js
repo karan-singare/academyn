@@ -219,7 +219,7 @@ $('main .callout').attr('data-aos', 'zoom-in');
 $('.sidebar_left .card').attr('data-aos', 'slide-right');
 $('.sidebar_right .card').attr('data-aos', 'slide-left');
 $('.footer__navigation .cell').attr('data-aos', 'slide-up');
-$('.top-content .card').attr({
+$('.top_content .card').attr({
   'data-aos-offset': 0,
   'data-aos': 'slide-up',
 });

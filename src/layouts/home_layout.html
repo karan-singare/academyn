@@ -9,13 +9,19 @@
     <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <script src="{{root}}assets/js/fontawesome-all.js" charset="utf-8"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
 
-    <script src="{{root}}assets/js/app.js"></script>
+      <script src="{{root}}assets/js/app.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 800,
+        });
+      </script>
   </body>
 </html>
