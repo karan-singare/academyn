@@ -1,0 +1,28 @@
+<form data-abide novalidate>
+  <div data-abide-error class="callout alert" aria-live="assertive" style="display:none;">
+    <p>General error message.</p>
+  </div>
+  <label>
+    FullName
+    <input type="text" placeholder="Your Fullname" aria-describedby="basicsHelpText" aria-errormessage="basicsError" required>
+    <span id="basicsError" class="form-error">This field is required.</span>
+    <p class="help-text" id="basicsHelpText">Fill up your name here.</p>
+  </label>
+  <label>
+    Email
+    <input type="email" placeholder="Your Email" aria-describedby="emailHelpText" aria-errormessage="emailError" required pattern="email">
+    <span id="basicsError" class="form-error">Enter a valid email.</span>
+      <p class="help-text" id="emailHelpText">Fill up your email here.</p>
+  </label>
+  <label>
+    Message
+    <textarea rows="5" placeholder="Your Message" aria-describedby="messageHelpText" aria-errormessage="messageError" required></textarea>
+    <span id="messageError" class="form-error">This field is required.</span>
+    <p class="help-text" id="messageHelpText">Type your message here.</p>
+  </label>
+  <fieldset>
+    <legend>Subscribe to our newsletter</legend>
+    <input type="checkbox" id="checkbox"><label for="checkbox">Yes, sure!</label>
+  </fieldset>
+  <button type="submit" class="button primary">Submit</button>
+</form>

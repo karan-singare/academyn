@@ -1,0 +1,28 @@
+<div class="grid-container fluid">
+  <main class="grid-x grid-padding-x grid-padding-y" data-equalizer="">
+    {{#unlesspage 'contact'}}
+    <div class="cell large-3 small-order-2 medium-order-1" data-equalizer-watch="">
+      {{> sidebar_left}}
+    </div>
+    {{/unlesspage}}
+    <div class="cell auto small-order-1 medium-order-2 main-content" data-equalizer-watch="">
+      {{#ifpage 'home'}}
+        {{> home_content}}
+      {{/ifpage}}
+      {{#ifpage 'contact'}}
+        {{> contact_content}}
+      {{/ifpage}}
+      {{#ifpage 'about'}}
+        {{> about_content}}
+      {{/ifpage}}
+      {{#ifpage 'article'}}
+        {{> article_content}}
+      {{/ifpage}}
+    </div>
+    {{#unlesspage 'contact'}}
+      <div class="cell large-3 small-order-3" data-equalizer-watch="">
+        {{> sidebar_right}}
+      </div>
+    {{/unlesspage}}
+  </main>
+</div>

@@ -1,0 +1,63 @@
+.slider__container {
+  overflow: hidden;
+  background: rgba($background-light, $opacity-light);
+  position: relative;
+}
+.slide {
+  display: flex;
+  height: 30rem;
+  display: none;
+  &__media {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+  &__details {
+    div {
+      margin-left:5rem;
+      h2 {
+        font-family: 'Abril Fatface', cursive;
+      }
+      h5 {
+        text-transform: uppercase;
+        font-family: 'Arvo', serif;
+      }
+    }
+  }
+  &__active {
+    display: flex;
+  }
+}
+.slider__bullets {
+  margin-left:5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  ul {
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+    li {
+      // &:not(:first-child) {
+      //   margin-right: 2rem;
+      // }
+      margin-right: 2rem;
+      width: 3rem;
+      height: .3rem;
+      background: rgba($black, $opacity-light);
+      cursor: pointer;
+
+    }
+    li.active {
+      background: $primary-color;
+    }
+  }
+}
+.slide {
+  @include breakpoint(medium down) {
+    height: 40rem;
+  }
+}

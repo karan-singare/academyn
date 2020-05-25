@@ -1,0 +1,17 @@
+.single_horizontal_menu {
+  height: 100%;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  li {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  a {
+    color: $white-light;
+    transition: $transition-default;
+    &:hover {
+      color: $secondary-color-contrast;
+    }
+  }
+}

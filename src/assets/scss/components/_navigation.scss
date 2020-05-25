@@ -1,0 +1,79 @@
+.navigation {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($black, $opacity-default);
+  position: fixed;
+  z-index: 20;
+  button {
+    color: $white-light;
+    left: 1.5rem;
+    transition: $transition-default;
+    &:hover {
+      color: $secondary-color-contrast;
+    }
+  }
+  display: none;
+  &__list {
+    width: 15rem;
+    background-image: linear-gradient(to right, rgba($secondary-color, .86), rgba($secondary-color, 0.86)),url('../img/nav-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    transition: all .3s ease-in;
+    border-bottom: 2px solid $dark-gray;
+    padding: .5rem 10%;
+
+    //Added to nullify them mrgin coming from _global.scss
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-top: 10rem;
+    }
+    &:hover {
+      background-color: rgba($secondary-color-contrast, $opacity-light);
+    }
+  }
+  a {
+    color: $white-light;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    position: relative;
+    & > * {
+      &:first-child {
+        margin-right: 1rem;
+      }
+      &:last-child {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  &__level {
+    &--main {
+      top: 0;
+      left: 0;
+      margin-left: 0;
+    }
+    &--sub {
+      top: 0;
+      left: 15rem;
+      margin-left: 0;
+      box-shadow: 1rem 0 2rem rgba($black, 0.6) inset;
+      display: none;
+    }
+  }
+}
+.link-highlight {
+  color: $primary-color;
+  background-color: rgba($primary-color-contrast, $opacity-default);
+  border-bottom: 2px solid transparent;
+}

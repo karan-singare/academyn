@@ -1,0 +1,95 @@
+.off-canvas-content {
+  margin-top: 8rem;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgba($background-light, $opacity-light);
+  scroll-behavior: smooth;
+}
+main {
+  min-height: 35rem;
+  .main-content {
+    background-color: $background-medium;
+  }
+}
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Lato', sans-serif;
+//   font-weight: 600;
+//   font-style: normal;
+//   color: $primary-color;
+// }
+.subheader {
+  color: inherit;
+}
+// LISTS
+ul {
+  list-style: none;
+  li {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
+.button.secondary.clear {
+  color: $white-light;
+  &:hover {
+    color: $secondary-color-contrast;
+  }
+}
+
+.button.primary {
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid transparent;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+}
+a {
+  &,
+  &:link,
+  &:visited {
+    color: $white-light;
+    text-transform: capitalize;
+    transition: $transition-default;
+  }
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+svg {
+  cursor: pointer;
+}
+
+.card {
+  background-color: $background-medium;
+  border: $border-light;
+  transition: $transition-default;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  a {
+    color: $black;
+    transition: $transition-default;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .card-divider {
+    color: $white-light;
+    background: $primary-color!important;
+  }
+}
+.callout {
+  background-color: $background-medium;
+  border: $border-light;
+
+}
+.close-button {
+  color: $white-light;
+}

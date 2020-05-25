@@ -1,0 +1,17 @@
+#quickInfo {
+  height: 98vh;
+  width: 100%;
+  position: fixed;
+}
+#quickInfo, #explore {
+  top: 2rem;
+  background-image: linear-gradient(to right, rgba($secondary-color, $opacity-default), rgba($secondary-color, $opacity-light)),url('../img/nav-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .close-button{
+    transition: $transition-default;
+    &:hover {
+      color: $secondary-color-contrast;
+    }
+  }
+}

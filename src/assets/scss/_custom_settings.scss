@@ -1,0 +1,37 @@
+$foundation-palette: (
+  primary: #70A1FF,
+  secondary: #FA7992,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ff6b81,
+);
+// $global-font-size: 62.5%;
+@include add-foundation-colors;
+$primary-color-contrast: #424656;
+$secondary-color-contrast: #BE435F;
+$background-light: #F4F9FF;
+$background-medium: #e7efff;
+// TEXT COLORS
+$white-light: #FAF7FF;
+$white-normal: #f2f2f2;
+$white-dark: #C6C6C6;
+$gray-light: #A6ABBD;
+// UTILITIES
+$opacity-default: .9;
+$opacity-light: .7;
+//FLEX
+$flex-dir-row: row;
+$flex-dir-col: column;
+//BORDER
+$border-light: 2px solid $light-gray;
+//BOX-SHADOW
+$boxshadow-default: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+//TRANSITION
+$transition-default: all .4s ease;
+
+:root {
+  --primaryColor: $primary-color;
+  --secondaryColor: $secondary-color;
+  --opacityDefault: $opacity-default;
+  --opacityLight: $opacity-light;
+}

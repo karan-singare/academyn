@@ -1,0 +1,27 @@
+May 21 2020
+1. To fix the details area to comprise more text
+2. In smaller devices the main heading should be separate line
+3. Remove the card heading from the first sidebar and put News in place of that.
+4. Make secondary sidebar consistent with the former sidebar
+5. Use Panini for creating duplicate codes using conditionals
+6. Find out the places where we can use the color scheme
+7.Look for themes and unique features
+8.Get sample blocks that will be used in websites
+  - background video
+  - cards
+9.Start using animation using in the website
+
+May 22, 2020
+1. Find out the z-index of the callout close button
+2. Scroll up fixed button to scroll up
+3. Have a look on some good slider
+4. Fix the glitch in the footer
+5. On scrolldown hide the pinkbar, reduce the font-size of the main title
+6. As soon as we scroll up the pink bar should reappear.
+7. Scrollbar tweakings
+8. make another content top with rhombus effect
+9 .footer animation from https://www.salesian.vic.edu.au/
+10.move the bullets to the details area
+11. loading bar for the website
+12. hover effect for the news card
+13. The heading effect on link http://www.elevenplantsfordumdums.com/ div number 9

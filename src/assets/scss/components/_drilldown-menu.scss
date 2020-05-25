@@ -1,0 +1,35 @@
+.drilldown_menu {
+  height: 100%;
+  font-size:1.2rem;
+  .is-drilldown-submenu {
+    background-image: linear-gradient(to right, rgba($secondary-color, $opacity-default), rgba($secondary-color, $opacity-light)),url('../img/nav-2.jpg');
+  }
+  //This is required override the color of right-arrow appearing in the drilldown menu
+  .is-drilldown-submenu-parent > a::after {
+    border-left-color: $white-light;
+  }
+  .js-drilldown-back > a::before {
+    border-right-color: $white-light;
+  }
+  li {
+    width: 60%;
+    margin-left: 20%;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &:first-child {
+      margin-top: 10rem;
+    }
+  }
+  a {
+    background-color: transparent;
+    line-height: 1.2;
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: rgba($secondary-color-contrast, $opacity-light);
+      box-shadow: $boxshadow-default;
+    }
+  }
+}
