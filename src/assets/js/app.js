@@ -168,25 +168,19 @@ $(document).ready(function() {
   $(window).scroll(function(event) {
     var currentScrollTop = $(this).scrollTop();
     if (currentScrollTop > lastScrollTop) {
-      $('header .sub-header').fadeOut();
+      $('header .sub-header').slideUp();
+      $('header h1').animate({
+        'font-size': '2.5rem',
+      });
     } else {
-      $('header .sub-header').fadeIn();
+      $('header .sub-header').slideDown();
+      $('header h1').animate({
+        'font-size': '4rem',
+      });
     }
     lastScrollTop = currentScrollTop;
 
   });
-
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > offset) {
-  //     $('header .main-header h1').animate({
-  //       'font-size': '2.5rem',
-  //     }, 200);
-  //   } else if ($(this).scrollTop() < offset) {
-  //     $('header .main-header h1').animate({
-  //       'font-size': '4rem',
-  //     }, 200);
-  //   }
-  // });
 
 });
 

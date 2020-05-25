@@ -25,3 +25,17 @@ May 22, 2020
 11. loading bar for the website
 12. hover effect for the news card
 13. The heading effect on link http://www.elevenplantsfordumdums.com/ div number 9
+
+May 25, 2020
+1. Box-shadow to header and slider
+2. Animation in the slider
+3. Main navigation loading problem
+4. top loading bar according to the percentage of scroll
+5. Include different types of blocks below the main content
+    eg A MESSAGE FROM THE PRINCIPAL from the site https://www.salesian.vic.edu.au/
+    every tournament block from the website https://www.woodhousegrove.co.uk/
+6. Include the zoom effect in ther website https://www.woodhousegrove.co.uk/
+7. slant separation for the regions
+8. button effect from the site https://www.lausanneschool.com/
+9. try to use the mix color pink and blue on button
+10.try full width slider
