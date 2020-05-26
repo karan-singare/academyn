@@ -7,6 +7,8 @@ header {
   z-index: 10;
   margin-bottom: 8rem;
 
+  display: none;
+
   .sub-header {
     .button-group {
       margin-bottom: 0;
@@ -46,7 +48,4 @@ a, svg {
   &:hover {
     color: $secondary-color-contrast;
   }
-}
-.header_support {
-  margin-bottom: 10rem;
 }

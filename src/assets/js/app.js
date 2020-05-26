@@ -18,6 +18,22 @@ $(document).foundation();
 
 
 /**
+ * Preloader Handler
+ *
+ */
+
+$(window).on('load', function() {
+  $('.preloader-container').fadeOut();
+  $('header').show();
+  $('.header_support').css({
+    'margin-bottom': '10rem',
+  });
+  $('.banner').css({
+    'margin-top': '-2rem',
+  });
+});
+
+/**
  * HEADER
  * top header search button
  */

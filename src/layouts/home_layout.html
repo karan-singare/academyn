@@ -11,17 +11,21 @@
     <script src="{{root}}assets/js/fontawesome-all.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
+  {{> preloader}}
+  
   <body>
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
     {{> body}}
 
 
-      <script src="{{root}}assets/js/app.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          duration: 800,
-        });
-      </script>
+    <script src="{{root}}assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
