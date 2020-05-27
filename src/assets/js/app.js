@@ -19,9 +19,7 @@ $(document).foundation();
 
 /**
  * Preloader Handler
- *
  */
-
 $(window).on('load', function() {
   $('.preloader-container').fadeOut();
   $('header').show();
@@ -31,6 +29,17 @@ $(window).on('load', function() {
   $('.banner').css({
     'margin-top': '-2rem',
   });
+});
+
+/**
+ * SCROLL PAGE INDICATOR HANDLER
+ */
+$(window).on('scroll', function() {
+  var scroll = $(window).scrollTop();
+  var document_height = $(document).height();
+  var window_height = $(window).height();
+  var scroll_val = (scroll / (document_height - window_height)) * 100;
+  $('.scroll_progress').css('width', scroll_val + '%');
 });
 
 /**

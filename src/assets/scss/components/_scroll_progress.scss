@@ -1,0 +1,10 @@
+/**
+ Take care of the z-index later
+ */
+.scroll_progress {
+  position: fixed;
+  top: 0;
+  height: .3rem;
+  background-color: #f1c40f;
+  z-index: 100;
+}
