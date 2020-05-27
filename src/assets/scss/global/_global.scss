@@ -30,12 +30,16 @@ ul {
   text-transform: uppercase;
   font-weight: 600;
   border: 2px solid transparent;
-  background-color: $primary-color;
+  color: $black;
+  background-color: transparent;
+  border: 2px solid $primary-color;
 
   &:hover {
     background-color: transparent;
     color: $primary-color;
-    border: 2px solid $primary-color;
+    clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+    background-color: $primary-color;
+    color: $white-light;
   }
 }
 a {
