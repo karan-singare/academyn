@@ -1,70 +1,43 @@
-# ZURB Template
+# Multipurpose Theme
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
+This is a theme based on the Front-end Framework <strong>Zurb Foundation</strong>
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+## Steps to recreate this project locally
 
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
 
-- Handlebars HTML templates with Panini
-- Sass compilation and prefixing
-- JavaScript module bundling with webpack
-- Built-in BrowserSync server
-- For production builds:
-  - CSS compression
-  - JavaScript module bundling with webpack
-  - Image compression
+1. Install Foundation CLI
+  ```console
+  $ npm install --global foundation-cli
+  # or sudo npm install --global foundation-cli
+  ```
+2. Create a new project
+  ```console
+  $ foundation new
+  ```
+3. Choose the first option i.e. A website (Foundation for Sites)
 
-## Installation
+    ![Gihub Logo](src/assets/img/website.png)
 
-To use this template, your computer needs:
+4. Give the name of your project
 
-- [NodeJS](https://nodejs.org/en/) (Version 6 or greater recommended, tested with 6.11.4 and 8.12.0)
-- [Git](https://git-scm.com/)
+    ![Gihub Logo](src/assets/img/project_name.png)
+5. Choose the template type as ZURB Template
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
+    ![Gihub Logo](src/assets/img/template_type.png)
 
-### Using the CLI
+6. Once the project is created, replace the src folder with the src folder downloaded from this repository [Academyn](https://github.com/karan-singare/academyn.git)
 
-Install the Foundation CLI with this command:
+7. To see the project on the browser enter the following command
 
-```bash
-npm install foundation-cli --global
-```
+  ```console
+  $ foundation watch
+  # sudo foundation watch
+  ```
+8. Go to your project folder and  Copy the fontawesome from src to dist i.e.
+  ```console
+  $ cp src/assets/js/fontawesome-all.js dist/assets/js/
+  ```
+9. Now open the browser and go to Local link provided by terminal
 
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template zurb
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-Now `cd` to your project name and to start your project run 
-
-```bash
-foundation watch
-```
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-yarn
-```
-
-Finally, run `yarn start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
-
-```
-http://localhost:8000
-```
-
-To create compressed, production-ready assets, run `yarn run build`.
+    ![Gihub Logo](src/assets/img/browser.png)
+10. All set You can see the project locally
