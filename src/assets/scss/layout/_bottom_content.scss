@@ -4,15 +4,16 @@
 
 .message_from_person {
   text-align: center;
-   padding-left: 20%;
-   padding-right: 20%;
-   p {
-    font-style: italic;
-    font-weight: 500;
-    margin: 1rem 0 2rem 0;
-    line-height: 146%;
-   }
+  padding: 4rem 0;
+  padding-left: 20%;
+  padding-right: 20%;
 
+  p {
+  font-style: italic;
+  font-weight: 500;
+  margin: 1rem 0 2rem 0;
+  line-height: 146%;
+  }
   h2 {
     text-transform: uppercase;
     font-size: .8rem;

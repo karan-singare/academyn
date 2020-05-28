@@ -1,0 +1,50 @@
+.tournament {
+  background: $background-light;
+  padding: 5rem 10%;
+  &__details {
+    padding-right: 2rem;
+    .title {
+      p {
+        line-height: 90%;
+        &:first-child {
+          font-size: 4rem;
+          font-weight: 300;
+          font-style: italic;
+        }
+        &:last-child {
+          font-size: 5rem;
+          font-weight: 700;
+          color: $secondary-color;
+          margin-bottom: 3rem;
+
+        }
+      }
+    }
+    & > p {
+      position: relative;
+      font-size: 1.4rem;
+      line-height: 190%;
+      display: block;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -5%;
+        height: 4px;
+        width: 6rem;
+        background: $secondary-color;
+      }
+    }
+  }
+
+
+  &__media {
+    .photo-1 {
+      width: 60%;
+      margin-left: 60%;
+    }
+    .photo-2 {
+      width: 90%;
+    }
+  }
+}
