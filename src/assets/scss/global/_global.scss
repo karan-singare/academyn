@@ -6,7 +6,12 @@ body {
   scroll-behavior: smooth;
 }
 section {
-  margin-bottom: 4rem;
+  &:not(.banner) {
+    padding: 3rem 0;
+  }
+}
+footer {
+  padding: 3rem 0;
 }
 .subheader {
   color: inherit;
@@ -33,6 +38,7 @@ ul {
   color: $black;
   background-color: transparent;
   border: 2px solid $primary-color;
+  padding:.8rem 2.4rem;
 
   &:hover {
     background-color: transparent;
