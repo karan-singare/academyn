@@ -1,0 +1,25 @@
+.bottom_content {
+  background: $gray-light;
+}
+
+.message_from_person {
+  text-align: center;
+   padding-left: 20%;
+   padding-right: 20%;
+   p {
+    font-style: italic;
+    font-weight: 500;
+    margin: 1rem 0 2rem 0;
+    line-height: 146%;
+   }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+  }
+  button {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+}

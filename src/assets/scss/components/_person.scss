@@ -1,0 +1,29 @@
+.person {
+  text-transform: capitalize;
+  text-align: left;
+  & > div {
+    height: 5rem;
+
+    &:first-child {
+      margin-right: 1rem;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: .5rem;
+  }
+  h6 {
+    font-size: .8rem;
+    font-weight: 900;
+    line-height: 1rem;
+  }
+}
