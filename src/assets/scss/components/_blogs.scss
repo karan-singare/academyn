@@ -1,0 +1,25 @@
+.blogs {
+  padding: 4rem 0;
+  & > p {
+    margin-bottom: 2rem;
+  }
+}
+.blog {
+  position: relative;
+  time {
+    margin-right: 1rem;
+  }
+  .tag {
+    position: absolute;
+    right: 0;
+    margin: .5rem;
+    padding: .7rem 2rem;
+    border-radius: 10rem;
+    color: $white-light;
+    background: $primary-color;
+    transition: $transition-default;
+    &:hover {
+      color: $black;
+    }
+  }
+}

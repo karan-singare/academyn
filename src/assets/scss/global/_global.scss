@@ -6,7 +6,7 @@ body {
   scroll-behavior: smooth;
 }
 section {
-  
+
 }
 footer {
   padding: 3rem 0;
@@ -44,6 +44,18 @@ ul {
     clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
     background-color: $primary-color;
     color: $white-light;
+  }
+}
+.button.clear {
+  text-transform: uppercase;
+  svg {
+    color: inherit;
+    margin-left: .5rem;
+    transition: $transition-default;
+  }
+
+  &:hover svg {
+    margin-left: 1rem;
   }
 }
 a {

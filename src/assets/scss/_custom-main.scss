@@ -1,4 +1,5 @@
 @import "global/global";
+@import "global/typography";
 @import "abstracts/mixins";
 @import "base/base";
 @import "base/utilities";
@@ -14,6 +15,7 @@
 @import "components/slider";
 @import "components/person";
 @import "components/tournament";
+@import "components/blogs";
 @import "layout/header";
 @import "layout/banner";
 @import "layout/highlight";

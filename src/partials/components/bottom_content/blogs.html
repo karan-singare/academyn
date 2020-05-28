@@ -1,0 +1,24 @@
+<div class="grid-container blogs">
+  <h2 class="heading__primary">our blog</h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+  <div class="grid-x grid-padding-x">
+    {{#each global.blog_images}}
+      <div class="cell medium-4 small-12">
+        <div class="card blog">
+          <img src={{url}} alt="blog1 image">
+          <a href="#" class="tag">Lifestyle</a>
+          <div class="card-section">
+            <div class="flex-container">
+              <time>May 28 2020</time>
+              <p>33 comments</p>
+            </div>
+            <h5>Standard post with a single image</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio cupiditate omnis optio architecto atque similique, rerum quas! Vel, ratione.</p>
+            <button class="button clear">read more<i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

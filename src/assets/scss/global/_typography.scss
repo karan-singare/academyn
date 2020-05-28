@@ -1,0 +1,16 @@
+.heading__primary {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: '';
+    // margin-top: 2rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background: $secondary-color;
+  }
+}
