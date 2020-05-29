@@ -1,0 +1,23 @@
+.newsletter {
+  background: $primary-color;
+  color: $white-light;
+  & > div {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    svg {
+      color: $primary-color;
+      line-height: 1;
+    }
+    .input-group-label {
+      padding: 0 .5rem;
+    }
+  }
+
+  h2 {
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}
