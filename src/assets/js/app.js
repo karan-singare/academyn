@@ -248,3 +248,18 @@ $('.top_content .card').attr({
   'data-aos-offset': 0,
   'data-aos': 'slide-up',
 });
+
+/**
+ * Gallery LightBox
+ */
+$(document).ready(function() {
+  var gallery_images = $('.gallery a');
+  lightbox.option({
+      'resizeDuration': 400,
+      'fadeDuration': 400,
+      'imageFadeDuration': 400,
+  });
+  Array.from(gallery_images).forEach((image, i) => {
+    $(image).attr('data-lightbox', 'lightbox-image');
+  });
+});

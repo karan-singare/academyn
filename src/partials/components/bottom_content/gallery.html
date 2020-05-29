@@ -1,3 +1,10 @@
-<div class="grid-container full">
-  <div class="gallery"></div>
+<div class="gallery">
+  <h2>Gallery</h2>
+  <div class="grid-x small-up-2 medium-up-3 large-up-4">
+    {{#each global.gallery}}
+    <div class="cell">
+      <a href={{url}}><img src={{small_url}}></a>
+    </div>
+    {{/each}}
+  </div>
 </div>

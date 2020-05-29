@@ -1,0 +1,19 @@
+<div class="latest_blog">
+  <h2>Latest from Blog</h2>
+
+  {{#each global.latest_blog}}
+    <div class="media-object blog">
+      <div class="media-object-section">
+        <div class="thumbnail">
+          <img src= {{url}}>
+        </div>
+      </div>
+      <div class="media-object-section main-section">
+        <h4>Dreams feel real while we're in them.</h4>
+        <p><i class="far fa-clock"></i>6m ago <i class="fas fa-tag"></i></p>
+      </div>
+    </div>
+  {{/each}}
+
+
+</div>

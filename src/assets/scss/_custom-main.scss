@@ -1,8 +1,11 @@
 @import "global/global";
 @import "global/typography";
+
 @import "abstracts/mixins";
+
 @import "base/base";
 @import "base/utilities";
+
 @import "components/preloader";
 @import "components/scroll_progress";
 @import "components/scrollbar";
@@ -18,6 +21,9 @@
 @import "components/blogs";
 @import "components/gallery";
 @import "components/newsletter";
+
+@import "blocks/latest_blog";
+
 @import "layout/header";
 @import "layout/banner";
 @import "layout/highlight";
@@ -25,5 +31,8 @@
 @import "layout/top_content";
 @import "layout/bottom_content";
 @import "layout/footer";
+
 @import "pages/article";
+
 @import "vendor/animate";
+@import "vendor/lightbox";

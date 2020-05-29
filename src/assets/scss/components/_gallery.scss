@@ -1,0 +1,21 @@
+.gallery {
+  text-align: center;
+  div {
+    overflow: hidden;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-bottom: 4rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+    &:hover {
+      filter: grayscale(100%);
+      transform: scale(1.1);
+    }
+  }
+}
