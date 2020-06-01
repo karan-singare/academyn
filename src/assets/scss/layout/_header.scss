@@ -42,10 +42,12 @@ header {
     color: $primary-color;
   }
 }
-a, svg {
-  transition: $transition-default;
-  color: $white-light;
-  &:hover {
-    color: $secondary-color-contrast;
+header, footer {
+  a, svg {
+    transition: $transition-default;
+    color: $white-light;
+    &:hover {
+      color: $secondary-color-contrast;
+    }
   }
 }

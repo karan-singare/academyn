@@ -14,5 +14,13 @@
         object-position: center;
       }
     }
+    svg {
+      color: inherit;
+    }
+    p {
+      & > * {
+        margin-right: .5rem;
+      }
+    }
   }
 }

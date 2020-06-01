@@ -1,19 +1,22 @@
 <div class="latest_blog">
-  <h2>Latest from Blog</h2>
-
-  {{#each global.latest_blog}}
-    <div class="media-object blog">
-      <div class="media-object-section">
-        <div class="thumbnail">
-          <img src= {{url}}>
+  <div class="card">
+    <div class="card-divider">
+      <h4>Latest from Blog</h4>
+    </div>
+    <div class="card-section">
+      {{#each global.latest_blog}}
+      <div class="media-object blog">
+        <div class="media-object-section">
+          <div class="thumbnail">
+            <img src= {{url}}>
+          </div>
+        </div>
+        <div class="media-object-section main-section">
+          <h6 class="h5">Dreams feel real while we're in them.</h6>
+          <p><i class="far fa-clock"></i>6m ago <i class="fas fa-tag"></i>Technology</p>
         </div>
       </div>
-      <div class="media-object-section main-section">
-        <h4>Dreams feel real while we're in them.</h4>
-        <p><i class="far fa-clock"></i>6m ago <i class="fas fa-tag"></i></p>
-      </div>
+      {{/each}}
     </div>
-  {{/each}}
-
-
+  </div>
 </div>

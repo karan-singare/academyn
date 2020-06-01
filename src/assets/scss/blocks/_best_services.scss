@@ -1,0 +1,25 @@
+.best_services {
+  .accordion {
+    background: $background-medium;
+    li {
+      border: 1px solid gray;
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    a {
+      font-size: 1.2rem;
+      color: #000;
+      svg {
+        color: inherit;
+        margin-right: 1rem;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      &::before {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
