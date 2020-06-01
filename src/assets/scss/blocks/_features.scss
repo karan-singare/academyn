@@ -1,0 +1,18 @@
+.feature {
+  padding: 4rem 0;
+  text-align: center;
+  color: $white-light;
+  & > * {
+    margin-bottom: 1rem;
+  }
+  svg {
+    font-size: 2rem;
+  }
+
+  &:nth-child(even) {
+    background: #444;
+  }
+  &:nth-child(odd) {
+    background: #333;
+  }
+}
